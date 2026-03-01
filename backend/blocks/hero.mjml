@@ -1,0 +1,49 @@
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image
+      src="{{hero.imageUrl}}"
+      alt="{{hero.alt}}"
+      width="600px"
+      padding="0"
+      fluid-on-mobile="true"
+    />
+  </mj-column>
+</mj-section>
+<mj-section background-color="{{brand.background}}" padding="{{hero.ctaPadding}}">
+  <mj-column>
+    <mj-text
+      align="center"
+      color="{{brand.text}}"
+      font-family="{{brand.fontDisplay}}, Arial, sans-serif"
+      font-size="{{hero.headlineSize}}"
+      font-weight="700"
+      line-height="1.2"
+      padding-bottom="8px"
+    >
+      {{hero.headline}}
+    </mj-text>
+    <mj-text
+      align="center"
+      color="{{brand.textSub}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="{{hero.subSize}}"
+      line-height="1.5"
+      padding-bottom="16px"
+    >
+      {{hero.subtext}}
+    </mj-text>
+    <mj-button
+      background-color="{{brand.cta}}"
+      color="{{brand.ctaText}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="14px"
+      font-weight="600"
+      letter-spacing="0.5px"
+      border-radius="4px"
+      padding="14px 32px"
+      href="{{hero.ctaUrl}}"
+    >
+      {{hero.ctaText}}
+    </mj-button>
+  </mj-column>
+</mj-section>

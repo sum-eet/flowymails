@@ -1,0 +1,21 @@
+<mj-section background-color="{{brand.background}}" padding="{{split.padding}}">
+  <mj-column padding="16px 24px 16px 24px">
+    <mj-text
+      color="{{brand.text}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="{{split.textSize}}"
+      line-height="1.6"
+      padding="0"
+    >
+      {{split.text}}
+    </mj-text>
+  </mj-column>
+  <mj-column padding="16px 24px 16px 0">
+    <mj-image
+      src="{{split.imageUrl}}"
+      alt="{{split.imageAlt}}"
+      border-radius="8px"
+      padding="0"
+    />
+  </mj-column>
+</mj-section>

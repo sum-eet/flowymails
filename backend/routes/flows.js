@@ -2,7 +2,33 @@ const express = require('express');
 const router  = express.Router();
 const registry = require('../flows/registry');
 const { deployFlow } = require('../flows/deploy');
+const { buildEmail } = require('../lib/emailBuilder');
+const emailDefs = require('../flows/emailDefinitions');
 const { getSupabase } = require('../lib/supabase');
+
+// GET /api/flows/preview/:emailKey?shop=drwater.store
+router.get('/preview/:emailKey', async (req, res, next) => {
+  try {
+    const { emailKey } = req.params;
+    const { shop } = req.query;
+    const supabase = getSupabase();
+
+    const { data: brand } = await supabase
+      .from('brands')
+      .select('*')
+      .eq('shop_domain', shop)
+      .maybeSingle();
+
+    const def = emailDefs[emailKey];
+    if (!def) return res.status(404).json({ error: `No email definition for: ${emailKey}` });
+
+    const content = def.content(brand || {}, {});
+    const html = buildEmail(def.blocks, brand || {}, content);
+
+    res.setHeader('Content-Type', 'text/html');
+    res.send(html);
+  } catch (err) { next(err); }
+});
 
 // GET /api/flows/catalog — all 10 registry entries (must be before /:shopDomain)
 router.get('/catalog', (req, res) => {

@@ -1,0 +1,58 @@
+<mj-section background-color="{{brand.background}}" padding="{{showcase.padding}}">
+  <mj-column padding="0 8px 0 24px">
+    <mj-image
+      src="{{showcase.product1Image}}"
+      alt="{{showcase.product1Name}}"
+      border-radius="8px"
+      padding="0 0 8px 0"
+      href="{{showcase.product1Url}}"
+    />
+    <mj-text
+      align="center"
+      color="{{brand.text}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      font-weight="600"
+      padding="4px 0 2px"
+    >
+      {{showcase.product1Name}}
+    </mj-text>
+    <mj-text
+      align="center"
+      color="{{brand.textSub}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      padding="0"
+    >
+      {{showcase.product1Price}}
+    </mj-text>
+  </mj-column>
+  <mj-column padding="0 24px 0 8px">
+    <mj-image
+      src="{{showcase.product2Image}}"
+      alt="{{showcase.product2Name}}"
+      border-radius="8px"
+      padding="0 0 8px 0"
+      href="{{showcase.product2Url}}"
+    />
+    <mj-text
+      align="center"
+      color="{{brand.text}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      font-weight="600"
+      padding="4px 0 2px"
+    >
+      {{showcase.product2Name}}
+    </mj-text>
+    <mj-text
+      align="center"
+      color="{{brand.textSub}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      padding="0"
+    >
+      {{showcase.product2Price}}
+    </mj-text>
+  </mj-column>
+</mj-section>

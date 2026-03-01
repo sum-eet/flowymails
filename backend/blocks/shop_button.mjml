@@ -1,0 +1,18 @@
+<mj-section background-color="{{brand.background}}" padding="{{shopbtn.padding}}">
+  <mj-column>
+    <mj-button
+      background-color="{{brand.cta}}"
+      color="{{brand.ctaText}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="14px"
+      font-weight="600"
+      letter-spacing="0.5px"
+      border-radius="4px"
+      padding="14px 48px"
+      href="{{shopbtn.url}}"
+      align="center"
+    >
+      {{shopbtn.text}}
+    </mj-button>
+  </mj-column>
+</mj-section>

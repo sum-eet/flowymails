@@ -1,0 +1,14 @@
+<mj-section background-color="{{brand.accent}}" padding="8px 24px">
+  <mj-column>
+    <mj-text
+      align="center"
+      color="{{brand.announcementText}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="12px"
+      font-weight="500"
+      letter-spacing="0.5px"
+    >
+      {{announcement.text}}
+    </mj-text>
+  </mj-column>
+</mj-section>

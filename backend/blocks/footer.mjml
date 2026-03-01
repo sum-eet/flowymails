@@ -1,0 +1,59 @@
+<mj-section background-color="{{brand.footerBg}}" padding="32px 24px 16px">
+  <mj-column width="33%" vertical-align="middle">
+    <mj-image
+      src="{{brand.logoUrl}}"
+      alt="{{brand.name}}"
+      width="80px"
+      align="left"
+      padding="0"
+    />
+  </mj-column>
+  <mj-column width="34%" vertical-align="middle">
+    <mj-button
+      background-color="{{brand.background}}"
+      color="{{brand.footerText}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      font-weight="600"
+      border="1px solid {{brand.footerText}}"
+      border-radius="24px"
+      padding="10px 28px"
+      href="{{brand.storeUrl}}"
+      align="center"
+    >
+      SHOP NOW
+    </mj-button>
+  </mj-column>
+  <mj-column width="33%" vertical-align="middle">
+    <mj-social align="right" padding="0">
+      <mj-social-element
+        name="instagram"
+        src="https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
+        href="{{brand.instagramUrl}}"
+        padding="0 4px"
+      />
+      <mj-social-element
+        name="facebook"
+        src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
+        href="{{brand.facebookUrl}}"
+        padding="0 4px"
+      />
+    </mj-social>
+  </mj-column>
+</mj-section>
+<mj-section background-color="{{brand.footerBg}}" padding="0 24px 24px">
+  <mj-column>
+    <mj-text
+      align="center"
+      color="{{brand.footerTextSub}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="11px"
+      line-height="1.5"
+      padding="0"
+    >
+      {{brand.tagline}}
+      <br />
+      <a href="{{ unsubscribe_url }}" style="color: {{brand.footerTextSub}};">Unsubscribe</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

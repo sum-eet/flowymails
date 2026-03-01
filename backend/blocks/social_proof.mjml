@@ -1,0 +1,52 @@
+<mj-section background-color="{{brand.surfaceAlt}}" padding="{{proof.padding}}">
+  <mj-column width="40%" padding="0 12px 0 24px">
+    <mj-image
+      src="{{proof.imageUrl}}"
+      alt="{{proof.reviewerName}}"
+      border-radius="8px"
+      padding="0"
+    />
+  </mj-column>
+  <mj-column width="60%" padding="0 24px 0 12px" vertical-align="middle">
+    <mj-text
+      color="{{brand.text}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="14px"
+      font-weight="700"
+      padding="0 0 4px"
+    >
+      {{proof.reviewerName}}
+    </mj-text>
+    <mj-text
+      color="{{brand.accent}}"
+      font-family="Arial, sans-serif"
+      font-size="14px"
+      padding="0 0 8px"
+    >
+      ★★★★★
+    </mj-text>
+    <mj-text
+      color="{{brand.text}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="{{proof.textSize}}"
+      line-height="1.5"
+      font-style="italic"
+      padding="0 0 12px"
+    >
+      "{{proof.reviewText}}"
+    </mj-text>
+    <mj-button
+      background-color="{{brand.background}}"
+      color="{{brand.cta}}"
+      font-family="{{brand.fontBody}}, Arial, sans-serif"
+      font-size="13px"
+      font-weight="600"
+      border="2px solid {{brand.cta}}"
+      border-radius="4px"
+      padding="8px 20px"
+      href="{{proof.ctaUrl}}"
+    >
+      {{proof.ctaText}}
+    </mj-button>
+  </mj-column>
+</mj-section>

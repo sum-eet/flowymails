@@ -5,35 +5,40 @@
 const fs = require('fs');
 const path = require('path');
 const registry = require('./registry');
+const emailDefs = require('./emailDefinitions');
+const { buildEmail } = require('../lib/emailBuilder');
 const { makeKlaviyoClient, klaviyoGetAll } = require('../lib/klaviyoClient');
 const { decrypt } = require('../lib/encrypt');
 const { getSupabase } = require('../lib/supabase');
 
 const TEMPLATES_DIR = path.join(__dirname, '../templates');
 
-// Render {{token}} — leave {{ klaviyo_tokens }} (with spaces) untouched
-function renderTemplate(html, brand, variables = {}) {
-  const tokens = {
-    'brand.primary':        brand.colours?.primary            || '#000000',
-    'brand.secondary':      brand.colours?.secondary          || '#333333',
-    'brand.accent':         brand.colours?.accent             || '#ffffff',
-    'brand.fontDisplay':    brand.fonts?.display?.name        || 'Arial, sans-serif',
-    'brand.fontDisplayUrl': brand.fonts?.display?.url         || '',
-    'brand.fontBody':       brand.fonts?.body?.name           || 'Arial, sans-serif',
-    'brand.fontBodyUrl':    brand.fonts?.body?.url            || '',
-    'brand.logoUrl':        brand.logo_url                    || '',
-    'brand.name':           brand.shop_domain?.split('.')[0]  || 'Store',
-    'product.imageUrl':     brand.product_images?.[0]?.url         || '',
-    'product.name':         brand.product_images?.[0]?.productName || '',
-    'product.price':        brand.product_images?.[0]?.price       || '',
-    'store.url':            brand.shop_domain                 || '',
-    ...variables,
-  };
-  // Only match {{noSpaces}} — never touch {{ djangoTokens }}
-  return html.replace(/\{\{([^\s}][^}]*)\}\}/g, (match, key) => {
-    const val = tokens[key.trim()];
-    return val !== undefined ? val : match;
-  });
+// Build email HTML via MJML block system.
+// Falls back to raw HTML file if no definition exists for the template key.
+function getEmailHtml(emailKey, brand, flowData = {}) {
+  const def = emailDefs[emailKey];
+  if (def) {
+    const content = def.content(brand, flowData);
+    return buildEmail(def.blocks, brand, content);
+  }
+  // Fallback: legacy raw HTML template
+  const htmlPath = path.join(TEMPLATES_DIR, `${emailKey}.html`);
+  try {
+    let html = fs.readFileSync(htmlPath, 'utf8');
+    // Basic token injection for legacy templates
+    const tokens = {
+      'brand.primary':    brand.colours?.primary   || '#000000',
+      'brand.logoUrl':    brand.logo_url           || '',
+      'brand.name':       brand.shop_domain?.split('.')[0] || 'Store',
+      'store.url':        brand.shop_domain        || '',
+    };
+    return html.replace(/\{\{([^\s}][^}]*)\}\}/g, (match, key) => {
+      const val = tokens[key.trim()];
+      return val !== undefined ? val : match;
+    });
+  } catch (_) {
+    return `<!doctype html><html><body><p>${emailKey}</p></body></html>`;
+  }
 }
 
 // Convert simplified steps[] into Klaviyo action definitions with temporary_ids + links
@@ -179,16 +184,7 @@ async function deployFlow(shopDomain, flowType) {
   const emailSteps = flowDef.steps.filter(s => s.type === 'send-email');
 
   for (const step of emailSteps) {
-    const htmlPath = path.join(TEMPLATES_DIR, `${step.template}.html`);
-    let html;
-    try {
-      html = fs.readFileSync(htmlPath, 'utf8');
-    } catch (_) {
-      // Template file missing — use minimal fallback so deploy doesn't fail
-      html = `<!doctype html><html><head><meta charset="UTF-8"></head><body style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;"><h2 style="color:{{brand.primary}}">{{brand.name}}</h2><p>${step.subject}</p></body></html>`;
-    }
-
-    if (brand) html = renderTemplate(html, brand, { coupon: 'DRWATER10' });
+    const html = getEmailHtml(step.template, brand || {});
 
     const tplRes = await client.post('/templates/', {
       data: {
