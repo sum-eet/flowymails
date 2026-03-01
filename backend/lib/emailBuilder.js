@@ -43,6 +43,52 @@ function injectTokens(mjmlStr, tokens) {
   });
 }
 
+// --- CUSTOM FONT CSS ---
+// Builds @font-face declarations for custom fonts stored in Supabase.
+// Falls back gracefully for clients that don't support web fonts (Gmail etc.).
+
+function buildFontStyles(fonts) {
+  if (!fonts) return '';
+  const decls = [];
+
+  const { display, body, bodyBold } = fonts;
+
+  if (display?.url) {
+    const fmt = display.format || 'opentype';
+    decls.push(`@font-face {
+      font-family: '${display.name}';
+      src: url('${display.url}') format('${fmt}');
+      font-weight: normal; font-style: normal;
+    }`);
+  }
+
+  if (body?.url) {
+    const fmt = body.format || 'woff2';
+    const src = body.urlWoff
+      ? `url('${body.url}') format('${fmt}'), url('${body.urlWoff}') format('woff')`
+      : `url('${body.url}') format('${fmt}')`;
+    decls.push(`@font-face {
+      font-family: '${body.name}';
+      src: ${src};
+      font-weight: 400; font-style: normal;
+    }`);
+  }
+
+  if (bodyBold?.url) {
+    const fmt = bodyBold.format || 'woff2';
+    const src = bodyBold.urlWoff
+      ? `url('${bodyBold.url}') format('${fmt}'), url('${bodyBold.urlWoff}') format('woff')`
+      : `url('${bodyBold.url}') format('${fmt}')`;
+    decls.push(`@font-face {
+      font-family: '${bodyBold.name}';
+      src: ${src};
+      font-weight: ${bodyBold.weight || '800'}; font-style: normal;
+    }`);
+  }
+
+  return decls.join('\n');
+}
+
 // --- EMAIL BUILDER ---
 
 function buildEmail(blocks, brand, content) {
@@ -123,15 +169,25 @@ function buildEmail(blocks, brand, content) {
 
   // Assemble MJML string
   const blockStrings = blocks.map(name => injectTokens(loadBlock(name), tokens));
+  const fontStyles   = buildFontStyles(brand.fonts);
+
+  // Font stacks: custom font first, then safe web fallbacks
+  const bodyStack    = brand.fonts?.body?.name
+    ? `'${brand.fonts.body.name}', Arial, sans-serif`
+    : 'Arial, sans-serif';
+  const displayStack = brand.fonts?.display?.name
+    ? `'${brand.fonts.display.name}', Georgia, serif`
+    : 'Georgia, serif';
 
   const mjmlString = `
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="${tokens['brand.fontBody']}, Arial, sans-serif" />
+      <mj-all font-family="${bodyStack}" />
       <mj-text line-height="1.6" />
     </mj-attributes>
     <mj-style>
+      ${fontStyles}
       a { color: inherit; }
     </mj-style>
   </mj-head>
