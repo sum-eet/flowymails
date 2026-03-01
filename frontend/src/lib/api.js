@@ -4,7 +4,11 @@ async function request(method, path, body) {
   const opts = { method, headers: { 'Content-Type': 'application/json' } };
   if (body) opts.body = JSON.stringify(body);
   const res  = await fetch(`${BASE}${path}`, opts);
-  const json = await res.json();
+  const text = await res.text();
+  let json;
+  try { json = JSON.parse(text); } catch (_) {
+    throw new Error(`Server error (${res.status}) — check backend logs`);
+  }
   if (!res.ok) throw new Error(json.error || `HTTP ${res.status}`);
   return json.data;
 }
