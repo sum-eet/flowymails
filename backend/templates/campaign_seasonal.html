@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 32px; text-align:center; }
+  .hero-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:{{brand.primary}}; margin:0 0 12px; }
+  .hero h1 { font-size:28px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .seasonal-block { margin:0 40px 24px; padding:28px; background:{{brand.primary}}; border-radius:8px; text-align:center; }
+  .seasonal-headline { color:#fff; font-size:22px; font-weight:900; text-transform:uppercase; margin:0 0 10px; }
+  .seasonal-body { color:rgba(255,255,255,0.85); font-size:14px; line-height:1.6; margin:0 0 20px; }
+  .seasonal-cta { display:inline-block; background:#fff; color:{{brand.primary}}; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:14px 32px; border-radius:100px; }
+  .product { margin:24px 40px; border:1.5px solid #e0e0e0; border-radius:8px; overflow:hidden; text-decoration:none; display:block; }
+  .product-img { width:100%; height:220px; object-fit:cover; display:block; background:#f4f4f4; }
+  .product-body { padding:16px 20px; }
+  .product-name { font-size:15px; font-weight:700; color:{{brand.primary}}; margin:0 0 6px; text-transform:uppercase; }
+  .product-price { font-size:18px; font-weight:900; color:{{brand.primary}}; margin:0; }
+  .cta { padding:24px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <p class="hero-label">Seasonal pick</p>
+    <h1>The right time to stock up</h1>
+    <p>Some things are just better this time of year. Here is what we recommend.</p>
+  </div>
+  <div class="seasonal-block">
+    <p class="seasonal-headline">{{product}}</p>
+    <p class="seasonal-body">{{offer}} — limited to what is in stock. Do not wait on this one.</p>
+    <a class="seasonal-cta" href="https://{{store.url}}">Shop Now</a>
+  </div>
+  <a class="product" href="https://{{store.url}}">
+    <img class="product-img" src="{{product.imageUrl}}" alt="{{product}}" />
+    <div class="product-body">
+      <p class="product-name">{{product}}</p>
+      <p class="product-price">{{product.price}}</p>
+    </div>
+  </a>
+  <div class="cta">
+    <a class="cta-btn" href="https://{{store.url}}">See All Products</a>
+  </div>
+  <div class="footer">
+    <p>You are receiving this from {{brand.name}}.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:26px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .product { margin:24px 40px; border:1.5px solid #e0e0e0; border-radius:8px; overflow:hidden; text-decoration:none; display:block; }
+  .product-img { width:100%; height:220px; object-fit:cover; display:block; background:#f4f4f4; }
+  .product-body { padding:16px 20px; }
+  .product-name { font-size:15px; font-weight:700; color:{{brand.primary}}; margin:0 0 6px; text-transform:uppercase; }
+  .product-price { font-size:18px; font-weight:900; color:{{brand.primary}}; margin:0; }
+  .cta { padding:8px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>You left something behind</h1>
+    <p>Hey {{ first_name|default:"there" }}, your cart is saved and waiting.<br>Pick up right where you left off.</p>
+  </div>
+  {% for item in event.extra.line_items %}
+    {% if item.vendor != "re:do" %}
+    <a class="product" href="{{ event.extra.checkout_url }}">
+      <img class="product-img" src="{{ item.product.images.0.src }}" alt="{{ item.title }}" />
+      <div class="product-body">
+        <p class="product-name">{{ item.title }}</p>
+        <p class="product-price">${{ item.price }}</p>
+      </div>
+    </a>
+    {% endif %}
+  {% endfor %}
+  <div class="cta">
+    <a class="cta-btn" href="{{ event.extra.checkout_url }}">Return to My Cart</a>
+  </div>
+  <div class="footer">
+    <p>Questions? Just reply — we read every message.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

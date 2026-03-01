@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .banner { background:{{brand.primary}}; border-top:1px solid rgba(255,255,255,0.15); padding:16px 40px; text-align:center; }
+  .banner p { color:#fff; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; margin:0; }
+  .discount-code { font-size:24px; letter-spacing:4px; color:#fff; font-weight:900; display:block; margin-top:4px; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:26px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .product { margin:24px 40px; border:1.5px solid {{brand.primary}}; border-radius:8px; overflow:hidden; text-decoration:none; display:block; }
+  .product-img { width:100%; height:220px; object-fit:cover; display:block; background:#f4f4f4; }
+  .product-body { padding:16px 20px; }
+  .product-name { font-size:15px; font-weight:700; color:{{brand.primary}}; margin:0 0 6px; text-transform:uppercase; }
+  .product-price-row { display:flex; align-items:center; gap:10px; }
+  .product-price-original { font-size:14px; color:#aaa; text-decoration:line-through; margin:0; }
+  .product-price-sale { font-size:18px; font-weight:900; color:#c0392b; margin:0; }
+  .urgency { margin:0 40px 24px; background:#fff8f0; border:1.5px solid #f0d9c0; border-radius:8px; padding:16px; text-align:center; }
+  .urgency p { font-size:13px; color:#8a4a00; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin:0; }
+  .cta { padding:8px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .cta-sub { font-size:12px; color:#aaa; margin:10px 0 0; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="banner">
+    <p>Your exclusive offer<span class="discount-code">{{coupon}}</span></p>
+  </div>
+  <div class="hero">
+    <h1>Last chance.<br>10% off your cart.</h1>
+    <p>This is the last email we'll send. The code expires in 48 hours<br>and it's just for you — no strings attached.</p>
+  </div>
+  {% for item in event.extra.line_items %}
+    {% if item.vendor != "re:do" %}
+    <a class="product" href="{{ event.extra.checkout_url }}?discount={{coupon}}">
+      <img class="product-img" src="{{ item.product.images.0.src }}" alt="{{ item.title }}" />
+      <div class="product-body">
+        <p class="product-name">{{ item.title }}</p>
+        <div class="product-price-row">
+          <p class="product-price-original">${{ item.compare_at_price }}</p>
+          <p class="product-price-sale">${{ item.price }}</p>
+        </div>
+      </div>
+    </a>
+    {% endif %}
+  {% endfor %}
+  <div class="urgency">
+    <p>Code expires in 48 hours. Don't leave it on the table.</p>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="{{ event.extra.checkout_url }}?discount={{coupon}}">Claim My 10% Off</a>
+    <p class="cta-sub">Applied automatically at checkout.</p>
+  </div>
+  <div class="footer">
+    <p>After this, the cart clears and the offer goes with it.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

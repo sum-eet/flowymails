@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:24px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .tips { margin:24px 40px; }
+  .tip { padding:16px 0; border-bottom:1px solid #eee; }
+  .tip:last-child { border-bottom:none; }
+  .tip-num { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:{{brand.primary}}; margin:0 0 4px; }
+  .tip-text { font-size:14px; color:#444; line-height:1.6; margin:0; }
+  .cta { padding:24px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>Getting the most out of your purchase</h1>
+    <p>{{ first_name|default:"Hey" }}, your order arrived a week ago. Here are a few tips from our team to help you get the best results.</p>
+  </div>
+  <div class="tips">
+    <div class="tip">
+      <p class="tip-num">Tip 01</p>
+      <p class="tip-text">Use it consistently. Most customers notice the biggest difference after 2–3 weeks of regular use.</p>
+    </div>
+    <div class="tip">
+      <p class="tip-num">Tip 02</p>
+      <p class="tip-text">Keep it simple. You do not need to change everything at once — integrate it naturally into your routine.</p>
+    </div>
+    <div class="tip">
+      <p class="tip-num">Tip 03</p>
+      <p class="tip-text">Track the difference. Many of our customers find it helpful to note how they feel before and after. Small wins add up.</p>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="https://{{store.url}}">Shop {{brand.name}}</a>
+  </div>
+  <div class="footer">
+    <p>Questions? Just reply to this email.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

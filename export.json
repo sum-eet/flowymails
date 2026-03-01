@@ -1,0 +1,1511 @@
+{
+  "account": {
+    "id": "TmnC6g",
+    "name": "Dr. Water",
+    "timezone": "US/Eastern",
+    "currency": "USD"
+  },
+  "metrics_total": 86,
+  "metrics": [
+    {
+      "id": "QYxWa3",
+      "name": "Subscribed to Back in Stock"
+    },
+    {
+      "id": "RByYLE",
+      "name": "Cancelled Order"
+    },
+    {
+      "id": "RVxtqY",
+      "name": "Unsubscribed from Email Marketing"
+    },
+    {
+      "id": "SHmEdY",
+      "name": "Subscribed to List"
+    },
+    {
+      "id": "SPA5Rp",
+      "name": "Unsubscribed from SMS Marketing"
+    },
+    {
+      "id": "THXkVt",
+      "name": "Unsubscribed from List"
+    },
+    {
+      "id": "TfHAWZ",
+      "name": "Added to Cart - Triple Pixel"
+    },
+    {
+      "id": "TpYSh9",
+      "name": "Fulfilled Order"
+    },
+    {
+      "id": "TvPeUR",
+      "name": "Added to Cart"
+    },
+    {
+      "id": "UBZXmS",
+      "name": "Subscribed to SMS Marketing"
+    },
+    {
+      "id": "UvMxJt",
+      "name": "Subscribed to Email Marketing"
+    },
+    {
+      "id": "V49utu",
+      "name": "Viewed Product - Triple Pixel"
+    },
+    {
+      "id": "V7Mvse",
+      "name": "Viewed Product"
+    },
+    {
+      "id": "VPrNqf",
+      "name": "Ordered Product"
+    },
+    {
+      "id": "VcqKMC",
+      "name": "Refunded Order"
+    },
+    {
+      "id": "WCGB6i",
+      "name": "Checkout Started - Triple Pixel"
+    },
+    {
+      "id": "WQKQXw",
+      "name": "Unsubscribed from SMS Transactional"
+    },
+    {
+      "id": "WYQDi7",
+      "name": "Checkout Started"
+    },
+    {
+      "id": "XBRFUJ",
+      "name": "Placed Order"
+    },
+    {
+      "id": "Yngtw4",
+      "name": "Fulfilled Partial Order"
+    }
+  ],
+  "metrics_all": [
+    {
+      "id": "QUmtDf",
+      "name": "Package delayed"
+    },
+    {
+      "id": "QYxWa3",
+      "name": "Subscribed to Back in Stock"
+    },
+    {
+      "id": "R3ackU",
+      "name": "Failed to Deliver SMS"
+    },
+    {
+      "id": "R4mkgQ",
+      "name": "Form completed by profile"
+    },
+    {
+      "id": "R5jKuS",
+      "name": "Manually Unsuppressed from Email Marketing"
+    },
+    {
+      "id": "RByYLE",
+      "name": "Cancelled Order"
+    },
+    {
+      "id": "RVxtqY",
+      "name": "Unsubscribed from Email Marketing"
+    },
+    {
+      "id": "RWZwi7",
+      "name": "Ticket Closed"
+    },
+    {
+      "id": "RYqcqq",
+      "name": "Alia Poll Answered"
+    },
+    {
+      "id": "RahYxC",
+      "name": "Ticket Created"
+    },
+    {
+      "id": "RmFdJu",
+      "name": "Opened Email"
+    },
+    {
+      "id": "RsYcVu",
+      "name": "Manually Suppressed from Email Marketing"
+    },
+    {
+      "id": "S5Lix7",
+      "name": "Package out for delivery"
+    },
+    {
+      "id": "SCGykn",
+      "name": "Active on Site - Triple Pixel"
+    },
+    {
+      "id": "SGMm9J",
+      "name": "Package delivery exception"
+    },
+    {
+      "id": "SHmEdY",
+      "name": "Subscribed to List"
+    },
+    {
+      "id": "SPA5Rp",
+      "name": "Unsubscribed from SMS Marketing"
+    },
+    {
+      "id": "ST3XcD",
+      "name": "Submitted Search"
+    },
+    {
+      "id": "Scz3eL",
+      "name": "Failed to Deliver Automated Response SMS"
+    },
+    {
+      "id": "SmPxVy",
+      "name": "Dropped Email"
+    },
+    {
+      "id": "Sp4Edq",
+      "name": "Delivered Shipment"
+    },
+    {
+      "id": "T9XFCu",
+      "name": "Confirmed Shipment"
+    },
+    {
+      "id": "THXkVt",
+      "name": "Unsubscribed from List"
+    },
+    {
+      "id": "TRCfeM",
+      "name": "Relayed SMS"
+    },
+    {
+      "id": "Ta77eX",
+      "name": "Received Email"
+    },
+    {
+      "id": "TfHAWZ",
+      "name": "Added to Cart - Triple Pixel"
+    },
+    {
+      "id": "TjmBVK",
+      "name": "Clicked Email"
+    },
+    {
+      "id": "TpYSh9",
+      "name": "Fulfilled Order"
+    },
+    {
+      "id": "TvPeUR",
+      "name": "Added to Cart"
+    },
+    {
+      "id": "UAUtkN",
+      "name": "Merged Profile"
+    },
+    {
+      "id": "UBZXmS",
+      "name": "Subscribed to SMS Marketing"
+    },
+    {
+      "id": "UMgu4E",
+      "name": "Clicked email to unsubscribe"
+    },
+    {
+      "id": "UvMxJt",
+      "name": "Subscribed to Email Marketing"
+    },
+    {
+      "id": "UvdeEd",
+      "name": "Package delivered"
+    },
+    {
+      "id": "V49utu",
+      "name": "Viewed Product - Triple Pixel"
+    },
+    {
+      "id": "V7Mvse",
+      "name": "Viewed Product"
+    },
+    {
+      "id": "VPrNqf",
+      "name": "Ordered Product"
+    },
+    {
+      "id": "VTfcx4",
+      "name": "Form submitted by profile"
+    },
+    {
+      "id": "VcqKMC",
+      "name": "Refunded Order"
+    },
+    {
+      "id": "Vf2ZYv",
+      "name": "Received SMS"
+    },
+    {
+      "id": "W5XWNk",
+      "name": "Marked Out for Delivery"
+    },
+    {
+      "id": "WCGB6i",
+      "name": "Checkout Started - Triple Pixel"
+    },
+    {
+      "id": "WQKQXw",
+      "name": "Unsubscribed from SMS Transactional"
+    },
+    {
+      "id": "WQzmXX",
+      "name": "Survey Answer - Triple Pixel"
+    },
+    {
+      "id": "WUEaMj",
+      "name": "Package picked up"
+    },
+    {
+      "id": "WYQDi7",
+      "name": "Checkout Started"
+    },
+    {
+      "id": "WhD8aG",
+      "name": "Ready to review"
+    },
+    {
+      "id": "WkXqP4",
+      "name": "Viewed Collection"
+    },
+    {
+      "id": "WqrQSm",
+      "name": "Sent SMS"
+    },
+    {
+      "id": "WzGmz9",
+      "name": "Marked Email as Spam"
+    },
+    {
+      "id": "X3sTuY",
+      "name": "Clicked SMS"
+    },
+    {
+      "id": "XAFLd6",
+      "name": "Coupon Assigned"
+    },
+    {
+      "id": "XBRFUJ",
+      "name": "Placed Order"
+    },
+    {
+      "id": "XFQ2aq",
+      "name": "Invalid Email suppression added"
+    },
+    {
+      "id": "XGrstr",
+      "name": "Updated Email Preferences"
+    },
+    {
+      "id": "XZN3T2",
+      "name": "Bounce suppression added"
+    },
+    {
+      "id": "XiLUUp",
+      "name": "Opened Text"
+    },
+    {
+      "id": "XvDMEn",
+      "name": "Package in transit"
+    },
+    {
+      "id": "Xxerzk",
+      "name": "Active on Site"
+    },
+    {
+      "id": "Y64ZFb",
+      "name": "Submitted review"
+    },
+    {
+      "id": "YcRJnQ",
+      "name": "Received Automated Response SMS"
+    },
+    {
+      "id": "YdaUuv",
+      "name": "Alia Reward Claimed"
+    },
+    {
+      "id": "Yn8f5C",
+      "name": "Bounced Email"
+    },
+    {
+      "id": "Yngtw4",
+      "name": "Fulfilled Partial Order"
+    },
+    {
+      "id": "QThBg8",
+      "name": "submitted_form_step"
+    },
+    {
+      "id": "RwiDSK",
+      "name": "qualified_form"
+    },
+    {
+      "id": "SFHuLB",
+      "name": "viewed_form_step"
+    },
+    {
+      "id": "Sf4yEP",
+      "name": "klaviyojs_session_started"
+    },
+    {
+      "id": "SrtsdT",
+      "name": "bot_protection"
+    },
+    {
+      "id": "TScaku",
+      "name": "Inbox Agent Responded To Message"
+    },
+    {
+      "id": "TiJxpe",
+      "name": "Viewed Form"
+    },
+    {
+      "id": "Unssrd",
+      "name": "Inbox Ticket Closed"
+    },
+    {
+      "id": "UqfDEn",
+      "name": "submitted_back_in_stock_form"
+    },
+    {
+      "id": "Uu9nh6",
+      "name": "Form completed by profile"
+    },
+    {
+      "id": "V7aqTH",
+      "name": "Closed Form"
+    },
+    {
+      "id": "VpTZPH",
+      "name": "Inbox Ticket Created"
+    },
+    {
+      "id": "VyrKYn",
+      "name": "impression.starsWidget"
+    },
+    {
+      "id": "WTAiqc",
+      "name": "Submitted Form"
+    },
+    {
+      "id": "WbJB9x",
+      "name": "user_identified"
+    },
+    {
+      "id": "WgzfMz",
+      "name": "Form submitted by profile"
+    },
+    {
+      "id": "WhTgGq",
+      "name": "submitted_back_in_stock_form_step"
+    },
+    {
+      "id": "Wufk7k",
+      "name": "extension_view"
+    },
+    {
+      "id": "XVQaz4",
+      "name": "unsubscribe_page_submit"
+    },
+    {
+      "id": "Y99cNg",
+      "name": "pageview.starsWidget"
+    },
+    {
+      "id": "Yas22Z",
+      "name": "closed_teaser"
+    },
+    {
+      "id": "YgFdBP",
+      "name": "extension_submit"
+    }
+  ],
+  "lists": [
+    {
+      "id": "R8A8FL",
+      "name": "Warranty Registrations"
+    },
+    {
+      "id": "SRZvdd",
+      "name": "Lookalike customers - 15 Mar"
+    },
+    {
+      "id": "TYYUKf",
+      "name": "Email List"
+    },
+    {
+      "id": "ThZpmZ",
+      "name": "Klaviyo Form"
+    },
+    {
+      "id": "TsB8u2",
+      "name": "SMS List"
+    },
+    {
+      "id": "TuHsPA",
+      "name": "Updated Email List - 18th Feb"
+    },
+    {
+      "id": "U7nMQC",
+      "name": "HydroFixx UR"
+    },
+    {
+      "id": "UrbwM4",
+      "name": "SMS Alia"
+    },
+    {
+      "id": "WSt2X8",
+      "name": "Warranty Feedback"
+    },
+    {
+      "id": "Wf83Mg",
+      "name": "Pop-up Filled but not Bought"
+    },
+    {
+      "id": "XN6wad",
+      "name": "Affiliates"
+    },
+    {
+      "id": "XzQFLd",
+      "name": "Preview List"
+    },
+    {
+      "id": "YaNfDH",
+      "name": "Test 77"
+    },
+    {
+      "id": "YjAYjJ",
+      "name": "Test Started Checkout"
+    }
+  ],
+  "segments": [
+    {
+      "id": "RjMAqk",
+      "name": "Shopify Customers (all-time buyers)"
+    },
+    {
+      "id": "S24xdb",
+      "name": "9 Oct Emails"
+    },
+    {
+      "id": "SdjDKm",
+      "name": "Warm-180 (not-yet-engaged)"
+    },
+    {
+      "id": "SeD9M2",
+      "name": "Over-contacted (4 in 7d)"
+    },
+    {
+      "id": "Spv6rc",
+      "name": "CONSIO - Abandoned Carts"
+    },
+    {
+      "id": "SqzERL",
+      "name": "Unengaged-180 (suppress)"
+    },
+    {
+      "id": "TavdPF",
+      "name": "All Email-Deliverable (your true “marketable” base)"
+    },
+    {
+      "id": "WZ3JXP",
+      "name": "unfulfilled 16 Dec"
+    },
+    {
+      "id": "WZWAfj",
+      "name": "CONSIO - HydroFixx >2"
+    },
+    {
+      "id": "WajWyB",
+      "name": "Engaged-45 (safe)"
+    },
+    {
+      "id": "WhCkWP",
+      "name": "9 Oct Emails Going forward"
+    },
+    {
+      "id": "Y5kgKT",
+      "name": "CONSIO - Active on Site New Customer L15"
+    },
+    {
+      "id": "Y7K4FF",
+      "name": "SMS Subscribers"
+    },
+    {
+      "id": "Yqr22h",
+      "name": "Sunset Segment"
+    }
+  ],
+  "flows_live": [
+    {
+      "id": "SDGXEW",
+      "name": "Started Checkout Revised Flow ( Jan 7 '26)",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2026-01-07T13:16:05+00:00",
+      "updated": "2026-01-14T12:09:10+00:00",
+      "steps": []
+    },
+    {
+      "id": "SRXYfk",
+      "name": "Warranty Flow for Reviews",
+      "status": "live",
+      "trigger_type": "Added to List",
+      "created": "2025-12-18T18:50:57+00:00",
+      "updated": "2025-12-18T18:50:57+00:00",
+      "steps": []
+    },
+    {
+      "id": "TrnS4w",
+      "name": "testing one time buyers a2c",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2026-01-13T14:00:32+00:00",
+      "updated": "2026-01-13T14:04:31+00:00",
+      "steps": []
+    },
+    {
+      "id": "UhRKiu",
+      "name": "Added to Cart Flow 1 (17th Oct)",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2025-10-17T10:21:32+00:00",
+      "updated": "2026-01-14T11:59:54+00:00",
+      "steps": []
+    },
+    {
+      "id": "UimUbZ",
+      "name": "awareness to interest",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2025-04-22T12:09:52+00:00",
+      "updated": "2025-04-22T18:39:22+00:00",
+      "steps": []
+    },
+    {
+      "id": "VSNpB7",
+      "name": "Post Purchase Emails Jan 12 2026",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2026-01-12T12:34:25+00:00",
+      "updated": "2026-01-12T12:34:25+00:00",
+      "steps": []
+    },
+    {
+      "id": "Vttfnh",
+      "name": "Customer Winback - Standard",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2026-01-13T18:12:45+00:00",
+      "updated": "2026-01-13T18:12:48+00:00",
+      "steps": []
+    },
+    {
+      "id": "WuPBmu",
+      "name": "Drip Flow Going Forward",
+      "status": "live",
+      "trigger_type": "Added to List",
+      "created": "2025-10-09T12:48:41+00:00",
+      "updated": "2025-10-09T12:48:45+00:00",
+      "steps": []
+    },
+    {
+      "id": "X2TyrS",
+      "name": "Customer Feedback call",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2025-03-26T09:15:46+00:00",
+      "updated": "2026-01-13T09:43:47+00:00",
+      "steps": []
+    },
+    {
+      "id": "XdWNq4",
+      "name": "Post Purchase (16th Sept) HydroPitcher (Final)",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2025-09-24T07:08:32+00:00",
+      "updated": "2025-10-01T14:48:28+00:00",
+      "steps": []
+    },
+    {
+      "id": "XzFTdz",
+      "name": "Post Purchase (16th Sept) HydroStanley (Final)",
+      "status": "live",
+      "trigger_type": "Metric",
+      "created": "2025-09-23T18:56:25+00:00",
+      "updated": "2025-10-01T14:52:25+00:00",
+      "steps": []
+    }
+  ],
+  "flows_draft": [
+    {
+      "id": "RG4Jq3",
+      "name": "Test Started Checkout 2",
+      "trigger_type": "Metric",
+      "created": "2026-01-06T13:06:48+00:00"
+    },
+    {
+      "id": "RHedF5",
+      "name": "Customer Winback - Standard",
+      "trigger_type": "Metric",
+      "created": "2026-01-13T18:07:27+00:00"
+    },
+    {
+      "id": "RTpXxR",
+      "name": "Unified - Abandoned Cart Mails",
+      "trigger_type": "Metric",
+      "created": "2025-07-29T20:08:17+00:00"
+    },
+    {
+      "id": "Ryziyd",
+      "name": "Dr.Water — Add to Cart Abandonment",
+      "trigger_type": "Metric",
+      "created": "2026-02-22T08:21:54+00:00"
+    },
+    {
+      "id": "SHGrgJ",
+      "name": "User Research Call - Cart Drop Off (Added to Cart but not placed order)",
+      "trigger_type": "Metric",
+      "created": "2025-07-22T10:13:25+00:00"
+    },
+    {
+      "id": "SUkJ99",
+      "name": "Essential Flow Recommendation_",
+      "trigger_type": "Unconfigured",
+      "created": "2025-07-18T06:43:10+00:00"
+    },
+    {
+      "id": "SptB9s",
+      "name": "Post-Purchase Followup - Order Count Split",
+      "trigger_type": "Metric",
+      "created": "2025-09-16T18:51:12+00:00"
+    },
+    {
+      "id": "Stp7qv",
+      "name": "Post-Purchase Followup - Order Count Split",
+      "trigger_type": "Metric",
+      "created": "2025-09-16T18:54:33+00:00"
+    },
+    {
+      "id": "T2ERrW",
+      "name": "Sunset Unengaged Subscribers - Customer vs. Non-Customer",
+      "trigger_type": "Added to List",
+      "created": "2025-12-05T08:39:31+00:00"
+    },
+    {
+      "id": "T2hpV6",
+      "name": "Started Checkout (17th Oct)",
+      "trigger_type": "Metric",
+      "created": "2025-10-17T10:27:13+00:00"
+    },
+    {
+      "id": "T3JYwr",
+      "name": "Ebook Email (After order is delivered)",
+      "trigger_type": "Metric",
+      "created": "2025-07-24T06:59:23+00:00"
+    },
+    {
+      "id": "Tch9nC",
+      "name": "Post Purchase (16th Sept) 2",
+      "trigger_type": "Metric",
+      "created": "2025-09-19T12:28:34+00:00"
+    },
+    {
+      "id": "TqwT2T",
+      "name": "Drip Flow - Oct 9, 2025, 4:03 PM",
+      "trigger_type": "Added to List",
+      "created": "2025-10-09T10:35:51+00:00"
+    },
+    {
+      "id": "TunZDg",
+      "name": "Abandon Cart Mails (Cart<$100) - Added to Cart",
+      "trigger_type": "Metric",
+      "created": "2025-07-24T10:06:22+00:00"
+    },
+    {
+      "id": "UG2Yki",
+      "name": "Post Purchase (16th Sept) HydroStanley",
+      "trigger_type": "Metric",
+      "created": "2025-09-17T08:28:37+00:00"
+    },
+    {
+      "id": "US38kq",
+      "name": "Essential Flow Recommendation_",
+      "trigger_type": "Unconfigured",
+      "created": "2025-07-18T06:43:01+00:00"
+    },
+    {
+      "id": "VMwYwq",
+      "name": "Flow - Apr 23, 2025, 12:27 AM",
+      "trigger_type": "Unconfigured",
+      "created": "2025-04-22T18:57:59+00:00"
+    },
+    {
+      "id": "VfmwKQ",
+      "name": "Post-Purchase (16th Sept)",
+      "trigger_type": "Metric",
+      "created": "2025-09-17T08:08:57+00:00"
+    },
+    {
+      "id": "VrZKn4",
+      "name": "Chal Ja Bhai (checkout started)",
+      "trigger_type": "Metric",
+      "created": "2026-01-06T15:52:30+00:00"
+    },
+    {
+      "id": "VvaQmp",
+      "name": "Added to Cart Flow (17th Oct)",
+      "trigger_type": "Metric",
+      "created": "2025-10-17T10:18:17+00:00"
+    },
+    {
+      "id": "WGGdia",
+      "name": "User Research - Post Purchase Mail",
+      "trigger_type": "Metric",
+      "created": "2025-07-22T12:42:38+00:00"
+    },
+    {
+      "id": "WZEqcu",
+      "name": "Post Purchase (16th Sept) 3",
+      "trigger_type": "Metric",
+      "created": "2025-09-23T08:21:18+00:00"
+    },
+    {
+      "id": "Wf3LvQ",
+      "name": "interest to decision",
+      "trigger_type": "Metric",
+      "created": "2025-04-22T18:40:12+00:00"
+    },
+    {
+      "id": "WfZNWT",
+      "name": "Post Purchase (16th Sept) HydroStanley (Final 2)",
+      "trigger_type": "Metric",
+      "created": "2025-10-03T15:24:23+00:00"
+    },
+    {
+      "id": "Wm2Dkf",
+      "name": "Essential Flow Recommendation_",
+      "trigger_type": "Unconfigured",
+      "created": "2025-11-21T06:33:36+00:00"
+    },
+    {
+      "id": "XAME2U",
+      "name": "Post-Purchase Followup - Order Count Split",
+      "trigger_type": "Metric",
+      "created": "2025-09-03T13:20:27+00:00"
+    },
+    {
+      "id": "XAhY4p",
+      "name": "User Research Call - Cart Drop Off",
+      "trigger_type": "Metric",
+      "created": "2025-07-19T16:16:59+00:00"
+    },
+    {
+      "id": "XNp3sM",
+      "name": "Ebook Email (When customer enters mailing list)",
+      "trigger_type": "Added to List",
+      "created": "2024-07-13T14:04:14+00:00"
+    },
+    {
+      "id": "XTxQ38",
+      "name": "Abandon Cart Mails (Cart<$100) - Checkout Started",
+      "trigger_type": "Metric",
+      "created": "2025-07-24T10:28:43+00:00"
+    },
+    {
+      "id": "Xyc6jn",
+      "name": "Abandoned Cart Mails (Cart >$100) - Checkout Started",
+      "trigger_type": "Metric",
+      "created": "2024-10-26T14:40:41+00:00"
+    },
+    {
+      "id": "Ykv2ib",
+      "name": "Abandon Cart Mails (Cart>$100) - Added To Cart",
+      "trigger_type": "Metric",
+      "created": "2025-06-21T08:32:01+00:00"
+    }
+  ],
+  "templates": [
+    {
+      "id": "WuYnNm",
+      "name": "1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T09:01:25+00:00"
+    },
+    {
+      "id": "VnyMWd",
+      "name": "1a",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T11:30:50+00:00"
+    },
+    {
+      "id": "VwYNzc",
+      "name": "1b",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T11:34:43+00:00"
+    },
+    {
+      "id": "QVwaPE",
+      "name": "2025-03-21 04:00 Untitled email template",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-03-21T08:00:58+00:00"
+    },
+    {
+      "id": "XMSPbB",
+      "name": "2025-06-17 05:54 Untitled email template",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-17T09:54:46+00:00"
+    },
+    {
+      "id": "WrmKJx",
+      "name": "2025-07-15 04:21 Last Call - Animated",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-07-15T08:50:38+00:00"
+    },
+    {
+      "id": "ViSME6",
+      "name": "2a",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T11:42:12+00:00"
+    },
+    {
+      "id": "RqGvkg",
+      "name": "2b",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T11:46:00+00:00"
+    },
+    {
+      "id": "Sghgg8",
+      "name": "<100 Abandoned Cart Final ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-06T15:18:32+00:00"
+    },
+    {
+      "id": "UjiUQB",
+      "name": "<100 Abandoned Cart Final  Email 3",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-06T15:25:55+00:00"
+    },
+    {
+      "id": "VYts5f",
+      "name": "<100 MAIL 2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-07-24T10:17:17+00:00"
+    },
+    {
+      "id": "VLiAWv",
+      "name": "<100$ email2 A",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T18:54:07+00:00"
+    },
+    {
+      "id": "XWdL4k",
+      "name": "<100$ email2 B",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T18:56:15+00:00"
+    },
+    {
+      "id": "UhGeGJ",
+      "name": "<100$, email 3 A",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T19:07:55+00:00"
+    },
+    {
+      "id": "SLtCg6",
+      "name": "<100$, email3 B",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T19:12:11+00:00"
+    },
+    {
+      "id": "Xs6XPw",
+      "name": "<100$, email3 B",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T19:12:12+00:00"
+    },
+    {
+      "id": "XQ8bDz",
+      "name": ">100 Abandoned Cart Final",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-06T15:06:28+00:00"
+    },
+    {
+      "id": "VYRxMd",
+      "name": ">100 Abandoned Cart Final  Email 3 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-07T19:32:42+00:00"
+    },
+    {
+      "id": "YbsBCs",
+      "name": "ABCT Dec 1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-10T09:01:01+00:00"
+    },
+    {
+      "id": "UGbAXC",
+      "name": "ABCT Dec 1 (clone)",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-10T09:00:24+00:00"
+    },
+    {
+      "id": "V9HMbm",
+      "name": "ATC <100 CHECKOUT STARTED",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T08:59:34+00:00"
+    },
+    {
+      "id": "TfqFE3",
+      "name": "ATC Flow - Email 1 (1hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:09:57+00:00"
+    },
+    {
+      "id": "XUsMb7",
+      "name": "ATC Flow - Email 1 (1hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:08:06+00:00"
+    },
+    {
+      "id": "Vc9PN3",
+      "name": "ATC Flow - Email 1 (1hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T07:59:53+00:00"
+    },
+    {
+      "id": "RDcyTB",
+      "name": "ATC Flow - Email 1 (1hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:21:52+00:00"
+    },
+    {
+      "id": "WYzHiw",
+      "name": "ATC Flow - Email 2 (24hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T07:59:54+00:00"
+    },
+    {
+      "id": "VLs8bN",
+      "name": "ATC Flow - Email 2 (24hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:21:53+00:00"
+    },
+    {
+      "id": "SCpD3q",
+      "name": "ATC Flow - Email 2 (24hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:09:58+00:00"
+    },
+    {
+      "id": "RUa633",
+      "name": "ATC Flow - Email 2 (24hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:08:07+00:00"
+    },
+    {
+      "id": "QYh2as",
+      "name": "ATC Flow - Email 3 (72hr - 10% off)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T07:59:54+00:00"
+    },
+    {
+      "id": "XyRZGh",
+      "name": "ATC Flow - Email 3 (72hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:21:53+00:00"
+    },
+    {
+      "id": "UqPwxT",
+      "name": "ATC Flow - Email 3 (72hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:09:58+00:00"
+    },
+    {
+      "id": "TGzXxw",
+      "name": "ATC Flow - Email 3 (72hr)",
+      "editor_type": "CODE",
+      "updated": "2026-02-22T08:08:08+00:00"
+    },
+    {
+      "id": "VuWyDg",
+      "name": "ATC MAIL 2 CHECKOUT STARTED",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T08:35:56+00:00"
+    },
+    {
+      "id": "XcpbMs",
+      "name": "ATC>100 CHECKOUT STARTED MAIL 1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-02T08:26:15+00:00"
+    },
+    {
+      "id": "UUXJct",
+      "name": "AbCt [Casper w/Review]",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T08:41:28+00:00"
+    },
+    {
+      "id": "QZkFWy",
+      "name": "AbCt [Moment]",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T09:25:14+00:00"
+    },
+    {
+      "id": "TcAkTY",
+      "name": "AbCt [RUDY w/free shippping about to expire]",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T08:54:32+00:00"
+    },
+    {
+      "id": "RTGZpT",
+      "name": "AbCt [reasons]",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T09:17:29+00:00"
+    },
+    {
+      "id": "U8uaD2",
+      "name": "AbCt [selling out quick]",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T09:19:03+00:00"
+    },
+    {
+      "id": "Udidw3",
+      "name": "Abandoned At Cart Email",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-17T09:52:15+00:00"
+    },
+    {
+      "id": "Ta7DjA",
+      "name": "Abandoned At Cart_Pricing_Rajat",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-18T07:32:18+00:00"
+    },
+    {
+      "id": "TxbVBr",
+      "name": "Abandoned Cart <100$ Email#8",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T18:51:11+00:00"
+    },
+    {
+      "id": "XEruTC",
+      "name": "Abandoned Cart <100$ Email#8",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T18:51:13+00:00"
+    },
+    {
+      "id": "Sh9Qnb",
+      "name": "Abandoned Cart <100$ Email#8",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-19T18:51:12+00:00"
+    },
+    {
+      "id": "UC6jxZ",
+      "name": "Add to Cart Email 1 >100$",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-12T20:02:19+00:00"
+    },
+    {
+      "id": "XKbyD8",
+      "name": "Add to Cart Email 1 >100$",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-12T20:02:17+00:00"
+    },
+    {
+      "id": "RiKrEA",
+      "name": "Awareness to Interest",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-04-22T12:07:56+00:00"
+    },
+    {
+      "id": "SevD8h",
+      "name": "Bundle Value Emphasis - Feb 27",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T13:21:58+00:00"
+    },
+    {
+      "id": "QRjiPy",
+      "name": "Drip #1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-11-25T07:31:58+00:00"
+    },
+    {
+      "id": "WftH29",
+      "name": "Drip #3 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-08T12:47:01+00:00"
+    },
+    {
+      "id": "XkZBbx",
+      "name": "Drwater products",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-04-22T18:30:03+00:00"
+    },
+    {
+      "id": "SamENJ",
+      "name": "Ebook Flow (After order is delivered)",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-07-24T07:06:08+00:00"
+    },
+    {
+      "id": "QTcpHP",
+      "name": "Ebook Flow (when customer enters the mailing list)",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-07-24T07:05:22+00:00"
+    },
+    {
+      "id": "SGx86C",
+      "name": "Email 1<$100 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T18:00:54+00:00"
+    },
+    {
+      "id": "WsaTKu",
+      "name": "Email 1>$100",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T18:02:52+00:00"
+    },
+    {
+      "id": "QQxJjZ",
+      "name": "Email 3 <$100 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T17:55:12+00:00"
+    },
+    {
+      "id": "YhjxuP",
+      "name": "Email 3 >$100  ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T17:56:13+00:00"
+    },
+    {
+      "id": "Xjkun5",
+      "name": "Email 4 <$100",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T17:51:22+00:00"
+    },
+    {
+      "id": "TtvrjR",
+      "name": "Email 4 >$100 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-08T17:53:03+00:00"
+    },
+    {
+      "id": "WqjZeC",
+      "name": "Email Campaign 14 Jan",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-14T15:51:32+00:00"
+    },
+    {
+      "id": "T9duKy",
+      "name": "Email Campaign 24 Jan",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-24T15:47:17+00:00"
+    },
+    {
+      "id": "UzKwTV",
+      "name": "Email Campaign Jan 15",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-15T15:17:41+00:00"
+    },
+    {
+      "id": "TcXeRM",
+      "name": "Email Campaign Jan 21",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-21T15:45:09+00:00"
+    },
+    {
+      "id": "TXJ2px",
+      "name": "FAQ Friction Remover - Feb 25",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T13:19:31+00:00"
+    },
+    {
+      "id": "UkCkpp",
+      "name": "HKettle 50%",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-02-05T08:46:48+00:00"
+    },
+    {
+      "id": "TTP4wP",
+      "name": "HPro 55%",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-02-05T08:51:16+00:00"
+    },
+    {
+      "id": "U3qkbL",
+      "name": "Halloween #1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-22T13:44:56+00:00"
+    },
+    {
+      "id": "V4WyMp",
+      "name": "Halloween #2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-23T13:15:49+00:00"
+    },
+    {
+      "id": "QXGCrV",
+      "name": "Haloween 1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-22T10:41:14+00:00"
+    },
+    {
+      "id": "X8Xi5v",
+      "name": "Hkettle Text 50%",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-02-05T08:48:42+00:00"
+    },
+    {
+      "id": "XZd3ig",
+      "name": "Hydrator Pro Last chance",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-08-14T15:37:08+00:00"
+    },
+    {
+      "id": "RciSwV",
+      "name": "JAN 30 CAMPAIGN",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-30T16:22:11+00:00"
+    },
+    {
+      "id": "QPRTQN",
+      "name": "Look you have shop credit",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-07T13:17:39+00:00"
+    },
+    {
+      "id": "XKRifN",
+      "name": "Monday Routine - Feb 24",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T13:18:15+00:00"
+    },
+    {
+      "id": "YkRytL",
+      "name": "New Dr. Water Launch ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2024-10-28T18:50:43+00:00"
+    },
+    {
+      "id": "XkWVXp",
+      "name": "PRICING ADDED TO CART",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-21T11:10:59+00:00"
+    },
+    {
+      "id": "TjvpUN",
+      "name": "Pricing_Final",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-18T08:07:45+00:00"
+    },
+    {
+      "id": "WBRDBF",
+      "name": "Product Fit_Final",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-18T08:32:34+00:00"
+    },
+    {
+      "id": "R5e4vi",
+      "name": "Reviews Final",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-20T08:43:43+00:00"
+    },
+    {
+      "id": "XU3yWn",
+      "name": "Saturday Openers - Feb 21",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T12:22:22+00:00"
+    },
+    {
+      "id": "VUVqCW",
+      "name": "Saturday Openers - Feb 21",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T12:24:50+00:00"
+    },
+    {
+      "id": "WaebAf",
+      "name": "Saturday Openers - Feb 21",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T12:54:30+00:00"
+    },
+    {
+      "id": "Vp8Sq5",
+      "name": "Saturday Openers - Feb 21",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T12:25:59+00:00"
+    },
+    {
+      "id": "UZL6QG",
+      "name": "Saturday Openers Text Template",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T11:59:02+00:00"
+    },
+    {
+      "id": "YzsCLz",
+      "name": "Smile Drip #2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-08T12:35:03+00:00"
+    },
+    {
+      "id": "XdXh36",
+      "name": "Smile Drip #4 ",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-08T12:50:31+00:00"
+    },
+    {
+      "id": "TiVdDQ",
+      "name": "Sunday Reset - Feb 23",
+      "editor_type": "CODE",
+      "updated": "2026-02-21T13:14:41+00:00"
+    },
+    {
+      "id": "S37ttK",
+      "name": "Template 2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-06-20T06:49:27+00:00"
+    },
+    {
+      "id": "RqhacZ",
+      "name": "Welcome Series : Email 1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:00:47+00:00"
+    },
+    {
+      "id": "TtiNMu",
+      "name": "Welcome Series : Email 2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:02:54+00:00"
+    },
+    {
+      "id": "T6LMfp",
+      "name": "Welcome Series : Email 4",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:41:43+00:00"
+    },
+    {
+      "id": "Wh5wzK",
+      "name": "Welcome Series : Email 5",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:06:42+00:00"
+    },
+    {
+      "id": "RKgVAW",
+      "name": "Welcome Series : Email 6",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:10:31+00:00"
+    },
+    {
+      "id": "SkSe7q",
+      "name": "Welcome Series : Email 7",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:12:05+00:00"
+    },
+    {
+      "id": "Smtu9L",
+      "name": "Welcome Series : Email 8",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:15:12+00:00"
+    },
+    {
+      "id": "Y4EE4W",
+      "name": "Welcome Series: Email 3",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-10T10:21:08+00:00"
+    },
+    {
+      "id": "Y45cXS",
+      "name": "abandoned cart design 1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-06T13:27:37+00:00"
+    },
+    {
+      "id": "TpfAYH",
+      "name": "abandoned cart founder note",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T11:29:54+00:00"
+    },
+    {
+      "id": "RhabYp",
+      "name": "abandoned cart return policy",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T12:05:22+00:00"
+    },
+    {
+      "id": "XjmpeZ",
+      "name": "abandoned cart return policy v2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T12:06:56+00:00"
+    },
+    {
+      "id": "Xtqq39",
+      "name": "abandoned cart what to expect",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T11:23:33+00:00"
+    },
+    {
+      "id": "Wd7KSz",
+      "name": "abct review",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-12T07:32:43+00:00"
+    },
+    {
+      "id": "TZnKqw",
+      "name": "default-h2 water",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2024-11-29T21:35:57+00:00"
+    },
+    {
+      "id": "Tr2d9u",
+      "name": "ebook email",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2024-07-13T13:26:31+00:00"
+    },
+    {
+      "id": "WPQEZe",
+      "name": "nnnn",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-07-01T06:14:56+00:00"
+    },
+    {
+      "id": "XiWFjD",
+      "name": "template drip 3.1",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-10-09T10:44:21+00:00"
+    },
+    {
+      "id": "VBLKXh",
+      "name": "winback email 2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2026-01-13T18:20:08+00:00"
+    },
+    {
+      "id": "VHKwkR",
+      "name": "you've got great taste",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T13:21:47+00:00"
+    },
+    {
+      "id": "RYmuCq",
+      "name": "you've got great taste v2",
+      "editor_type": "SYSTEM_DRAGGABLE",
+      "updated": "2025-12-15T13:14:25+00:00"
+    }
+  ],
+  "campaigns": {
+    "error": "400 Invalid input.: A channel filter is required to list campaigns.  Please provide either ?filter=equals(messages.channel,'email') to list email campaigns, or ?filter=equals(messages.channel,'sms') to list sms campaigns."
+  },
+  "sms_numbers": {
+    "note": "Could not pull via API",
+    "known_from_code": "+18666422719"
+  }
+}

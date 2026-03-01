@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:24px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .guarantees { margin:24px 40px; }
+  .guarantee { display:flex; align-items:flex-start; margin-bottom:16px; }
+  .guarantee-icon { width:32px; height:32px; background:{{brand.primary}}; border-radius:50%; flex-shrink:0; margin-right:14px; display:flex; align-items:center; justify-content:center; }
+  .guarantee-text { font-size:14px; color:#333; line-height:1.5; }
+  .guarantee-title { font-weight:700; margin:0 0 3px; }
+  .guarantee-desc { margin:0; color:#666; }
+  .cta { padding:24px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>We stand behind every order</h1>
+    <p>Still thinking it over? Here is what you get when you order from {{brand.name}}.</p>
+  </div>
+  <div class="guarantees">
+    <div class="guarantee">
+      <div class="guarantee-text">
+        <p class="guarantee-title">Free returns within 30 days</p>
+        <p class="guarantee-desc">If you are not satisfied for any reason, we make returns simple and free.</p>
+      </div>
+    </div>
+    <div class="guarantee">
+      <div class="guarantee-text">
+        <p class="guarantee-title">Satisfaction guarantee</p>
+        <p class="guarantee-desc">Thousands of customers trust us. We are committed to getting it right for you.</p>
+      </div>
+    </div>
+    <div class="guarantee">
+      <div class="guarantee-text">
+        <p class="guarantee-title">Fast shipping</p>
+        <p class="guarantee-desc">Most orders ship within 1–2 business days and arrive at your door quickly.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="{{ event.extra.checkout_url }}">Complete My Order</a>
+  </div>
+  <div class="footer">
+    <p>Questions? Just reply to this email.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

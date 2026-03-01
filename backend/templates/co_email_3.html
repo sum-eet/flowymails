@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:26px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .offer { background:{{brand.primary}}; margin:24px 40px; padding:24px; border-radius:8px; text-align:center; }
+  .offer-label { color:rgba(255,255,255,0.75); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; margin:0 0 8px; }
+  .offer-code { color:#fff; font-size:28px; font-weight:900; letter-spacing:4px; margin:0 0 8px; }
+  .offer-desc { color:rgba(255,255,255,0.85); font-size:13px; margin:0; }
+  .cta { padding:24px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>Last chance — 10% off</h1>
+    <p>Hey {{ first_name|default:"there" }}, this is our final note about your order.<br>Use the code below to save 10% — it expires soon.</p>
+  </div>
+  <div class="offer">
+    <p class="offer-label">Your exclusive code</p>
+    <p class="offer-code">DRWATER10</p>
+    <p class="offer-desc">10% off your order — limited time</p>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="{{ event.extra.checkout_url }}?discount=DRWATER10">Claim My 10% Off</a>
+  </div>
+  <div class="footer">
+    <p>We hope to see you soon.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

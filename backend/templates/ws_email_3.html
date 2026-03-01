@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:24px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .reviews { margin:24px 40px; }
+  .review { background:#f9f9f7; border-radius:8px; padding:20px 24px; margin-bottom:14px; }
+  .stars { color:{{brand.primary}}; font-size:16px; margin:0 0 8px; }
+  .review-text { font-size:14px; color:#444; line-height:1.6; margin:0 0 8px; font-style:italic; }
+  .review-author { font-size:12px; color:#888; font-weight:600; margin:0; }
+  .cta { padding:24px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>Here is what people are saying</h1>
+    <p>Real customers, real results. Here are a few of our favourites.</p>
+  </div>
+  <div class="reviews">
+    <div class="review">
+      <p class="stars">★★★★★</p>
+      <p class="review-text">"I was skeptical at first, but after a week I could not imagine going back. It works exactly as described and the quality is outstanding."</p>
+      <p class="review-author">Sarah M. — verified buyer</p>
+    </div>
+    <div class="review">
+      <p class="stars">★★★★★</p>
+      <p class="review-text">"Ordered for myself, ended up buying three more as gifts. Everyone loves it. Fast shipping and great customer service too."</p>
+      <p class="review-author">James T. — verified buyer</p>
+    </div>
+    <div class="review">
+      <p class="stars">★★★★★</p>
+      <p class="review-text">"Best purchase I have made this year. Noticed a difference immediately. Would highly recommend to anyone on the fence."</p>
+      <p class="review-author">Priya K. — verified buyer</p>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="https://{{store.url}}">Shop Now</a>
+  </div>
+  <div class="footer">
+    <p>You subscribed to updates from {{brand.name}}.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

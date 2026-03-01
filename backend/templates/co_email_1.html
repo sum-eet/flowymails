@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:26px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .cta { padding:32px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .nudge { background:#f9f9f7; margin:0 40px 24px; padding:20px 24px; border-radius:8px; font-size:14px; color:#555; line-height:1.6; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>You were so close</h1>
+    <p>Hey {{ first_name|default:"there" }}, you made it all the way to checkout.<br>Your order is just one click away.</p>
+  </div>
+  <div class="nudge">
+    Your cart is saved. No need to start over — just pick up where you left off. Everything is exactly as you left it.
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="{{ event.extra.checkout_url }}">Complete My Order</a>
+  </div>
+  <div class="footer">
+    <p>Questions before you buy? Just reply — we are happy to help.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<style>
+  body { margin:0; padding:0; background:#f0f0ee; font-family:Arial,sans-serif; }
+  .wrap { max-width:600px; margin:0 auto; background:#fff; }
+  .header { background:{{brand.primary}}; padding:24px 40px; text-align:center; }
+  .header-title { color:#fff; font-size:22px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+  .hero { padding:48px 40px 24px; text-align:center; }
+  .hero h1 { font-size:26px; font-weight:900; color:{{brand.primary}}; text-transform:uppercase; margin:0 0 12px; }
+  .hero p { font-size:15px; color:#555; line-height:1.6; margin:0; }
+  .vip-box { margin:24px 40px; padding:24px; border:2px solid {{brand.primary}}; border-radius:8px; }
+  .vip-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:{{brand.primary}}; margin:0 0 8px; }
+  .vip-text { font-size:14px; color:#444; line-height:1.7; margin:0; }
+  .cta { padding:32px 40px 40px; text-align:center; }
+  .cta-btn { display:inline-block; background:{{brand.primary}}; color:#fff; text-decoration:none; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:2px; padding:16px 40px; border-radius:100px; }
+  .footer { border-top:1px solid #eee; padding:24px 40px; text-align:center; }
+  .footer p { font-size:12px; color:#aaa; line-height:1.6; margin:0; }
+  .footer a { color:{{brand.primary}}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header"><div class="header-title">{{brand.name}}</div></div>
+  <div class="hero">
+    <h1>You are one of our best customers</h1>
+    <p>{{ first_name|default:"Hey" }}, we wanted to say thank you — and give you something for it.</p>
+  </div>
+  <div class="vip-box">
+    <p class="vip-label">Early access</p>
+    <p class="vip-text">As one of our top customers, you get first look at new arrivals before we announce them to everyone else. Here is what is coming — and how to get it before it sells out.</p>
+  </div>
+  <div class="cta">
+    <a class="cta-btn" href="https://{{store.url}}">Shop New Arrivals</a>
+  </div>
+  <div class="footer">
+    <p>You are receiving this because you are a valued {{brand.name}} customer.<br><br>
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a></p>
+  </div>
+</div>
+</body></html>
