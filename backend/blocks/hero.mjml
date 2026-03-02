@@ -4,6 +4,7 @@
       src="{{hero.imageUrl}}"
       alt="{{hero.alt}}"
       width="600px"
+      height="400px"
       padding="0"
       fluid-on-mobile="true"
     />
@@ -14,10 +15,10 @@
     <mj-text
       align="center"
       color="{{brand.text}}"
-      font-family="{{brand.fontDisplay}}, Arial, sans-serif"
+      font-family="{{brand.fontDisplay}}, Georgia, serif"
       font-size="{{hero.headlineSize}}"
       font-weight="700"
-      line-height="1.2"
+      line-height="{{hero.headlineLine}}"
       padding-bottom="8px"
     >
       {{hero.headline}}

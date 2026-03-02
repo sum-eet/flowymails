@@ -1,5 +1,5 @@
 <mj-section background-color="{{brand.background}}" padding="{{split.padding}}">
-  <mj-column padding="16px 24px 16px 24px">
+  <mj-column width="55%" padding="16px 16px 16px 24px">
     <mj-text
       color="{{brand.text}}"
       font-family="{{brand.fontBody}}, Arial, sans-serif"
@@ -10,7 +10,7 @@
       {{split.text}}
     </mj-text>
   </mj-column>
-  <mj-column padding="16px 24px 16px 0">
+  <mj-column width="45%" padding="16px 24px 16px 8px">
     <mj-image
       src="{{split.imageUrl}}"
       alt="{{split.imageAlt}}"

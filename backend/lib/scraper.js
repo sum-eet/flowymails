@@ -4,6 +4,7 @@
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 const { getSupabase } = require('./supabase');
+const { computeBrandRoles } = require('./brandRoles');
 
 const UA = 'Mozilla/5.0 (compatible; Mailo/1.0)';
 const TIMEOUT = 10000;
@@ -167,6 +168,7 @@ async function scrapeBrand(shopDomain) {
 
   // --- Step 3: Logo ---
   let logoUrl = null;
+  let logoUrlLight = null;
   try {
     // header img with 'logo' in class or alt
     $('header img, .header img, #header img').each((_, el) => {
@@ -200,6 +202,18 @@ async function scrapeBrand(shopDomain) {
     } else {
       gaps.push('logo');
     }
+
+    // Attempt to find a light/white logo variant for dark backgrounds (footer)
+    $('footer img, .footer img, [class*="footer"] img').each((_, el) => {
+      if (logoUrlLight) return;
+      const src = $(el).attr('src') || $(el).attr('data-src') || '';
+      const cls = ($(el).attr('class') || '').toLowerCase();
+      if ((src.includes('white') || src.includes('light') || src.includes('inverse') ||
+           cls.includes('white') || cls.includes('light')) && src) {
+        logoUrlLight = src.startsWith('http') ? src : new URL(src, baseUrl).href;
+      }
+    });
+    logoUrlLight = logoUrlLight || logoUrl; // fall back to main logo if no light variant found
   } catch {
     gaps.push('logo');
   }
@@ -243,13 +257,25 @@ async function scrapeBrand(shopDomain) {
     // non-fatal: Shopify public endpoint, usually works
   }
 
+  const rawForRoles = {
+    primary:    colours?.primary    || null,
+    accent:     colours?.accent     || null,
+    background: colours?.background || null,
+    footerBg:   null,
+  };
+  const colorRoles = (colours && Object.keys(colours).length)
+    ? computeBrandRoles(rawForRoles)
+    : null;
+
   return {
-    shop_domain: shopDomain,
-    logo_url: logoUrl,
-    colours: Object.keys(colours).length ? colours : null,
-    fonts: Object.keys(fonts).length ? fonts : null,
+    shop_domain:    shopDomain,
+    logo_url:       logoUrl,
+    logo_url_light: logoUrlLight,
+    colours:        Object.keys(colours).length ? colours : null,
+    color_roles:    colorRoles,
+    fonts:          Object.keys(fonts).length ? fonts : null,
     product_images: productImages.length ? productImages : null,
-    raw_scrape: raw,
+    raw_scrape:     raw,
     gaps,
   };
 }

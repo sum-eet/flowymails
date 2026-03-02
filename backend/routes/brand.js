@@ -21,7 +21,9 @@ router.post('/analyse', async (req, res, next) => {
         {
           shop_domain:    scraped.shop_domain,
           logo_url:       scraped.logo_url,
+          logo_url_light: scraped.logo_url_light,
           colours:        scraped.colours,
+          color_roles:    scraped.color_roles,
           fonts:          scraped.fonts,
           product_images: scraped.product_images,
           raw_scrape:     scraped.raw_scrape,
